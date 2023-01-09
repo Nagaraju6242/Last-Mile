@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #dfe7f4;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    height: 8rem;
+    /* border: 2px solid red; */
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+
+
+nav img {
+    height: 6rem;
+    margin-right: 1rem;
+    vertical-align: middle;
+}
+
+nav .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    transform: translateX(-10%);
+}
+
+nav .menu a {
+    text-decoration: none;
+    color: #000;
+    margin: 0 1rem;
+}
+
+nav .menu a.active {
+    position: relative;
+}
+
+nav .menu a.active::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 120%;
+    height: 3px;
+    background-color: #4034cf;
+    bottom: -0.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px;
+}
+
+.home {
+    height: 100vh;
+    position: relative;
+    width: 100vw;
+}
+
+.home img.bg-hero {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    object-position: 20% 50%;
+    object-fit: cover;
+    width: 50%;
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 20% 100%);
+}
+
+.home .content {
+    padding: 4rem;
+}
+
+.home .content h1 {
+    font-size: 6rem;
+}
+
+.home .content p {
+    margin-top: 3rem;
+    font-size: 2rem;
+}
+
+.home .buttons {
+    padding: 2rem 4rem;
+}
+
+.btn {
+    text-decoration: none;
+    color: #000;
+    border-radius: 50px;
+    margin-right: 1.5rem;
+}
+
+.btn-bg {
+    background-color: #782dcd;
+    color: #fff;
+    padding: .5rem 2rem;
+}
+
+.features {
+    width: 100vw;
+}
+
+.features .trusted {
+    text-align: center;
+    background-color: #fff;
+    padding: 3rem 2rem;
+}
+
+.features .partners {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 0 2rem;
+}
+
+.features .partners img {
+    height: 5rem;
+}
+
+
+.logistics {
+    padding: 3rem;
+    background-color: #effafa;
+}
+
+.logistics .logis-head {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.logistics .logis-head .logis-right {
+    border-left: 1px solid #000;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.logis-cards {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    column-gap: 2rem;
+}
+
+.logis-card img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.logis-cards .logis-cards-side {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.app{
+    padding: 5rem 3rem;
+    background-color: #effafa;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.app h1{
+    font-size: 4rem;
+}
+
+.app p{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.app a img{
+    height: 4rem;
+}
+
+.stores{
+    margin-top: 5rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.stars{
+    margin-top: 1rem;
+}
+
+.stores div{
+    text-align: center;
+}
+
+.invisible {
+    opacity: 0 !important;
+    pointer-events: none;
+}
+
+.blue {
+    color: #4034cf;
+}
+
+.app-display{
+    text-align: center;
+}
+
+.app .app-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.app-display .splide img{
+    max-height: 80vh;
+}
+
+.splide li[role=presentation]{
+    width: 20%;
+    margin-right: 1rem;
+}
+
+.splide__pagination__page{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.splide__pagination{
+    margin-top: 1rem;
+}
+
+.splide__pagination__page.is-active{
+    background: #4034cf;
+    transform: scaleY(1.5);
+}

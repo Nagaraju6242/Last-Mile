@@ -1,0 +1,17 @@
+Fonts used:
+
+Inter Bold
+Inter Regular
+Inter Light
+
+Colour codes (Text and Stroke):
+
+1. 4034cf
+2. cccccc
+3. 000000
+
+Colour codes (Background):
+
+1. dfe7f4
+2. effafa
+
